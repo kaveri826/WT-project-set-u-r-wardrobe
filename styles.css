@@ -1,0 +1,293 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: url('images/bg.png') no-repeat center center fixed;
+
+  background-size: cover;
+  color: #1a1818;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(189, 131, 233, 0.6);
+}
+
+.logo {
+  font-size: 1.8em;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+nav a {
+  color: #141313;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  backdrop-filter: blur(20px);
+  color: black;
+}
+
+.hero-text button {
+  padding: 10px 30px;
+  font-size: 1em;
+  border: none;
+  background-color:#c459bd ;
+  color:white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.hero-text button:hover {
+  background-color: #bd0a87;
+}
+
+/* Promo Section */
+.promo {
+  text-align: center;
+  padding: 40px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(50px);
+}
+/* About Us Section */
+.about-section {
+  padding: 80px 40px;
+  max-width: 800px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  backdrop-filter: blur(50px);
+  color: #070707;
+  
+}
+
+.about-section h1 {
+  font-size: 2.2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about-section p {
+  font-size: 1.1em;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+/* Contact Section */
+.contact-section {
+  padding: 80px 40px;
+  max-width: 600px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  color: #fff;
+  text-align: center;
+  
+}
+
+.contact-section h1 {
+  font-size: 2.2em;
+  margin-bottom: 20px;
+  color: #1c191c;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #716975;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.contact-form button {
+  background-color: #fff;
+  color: #333;
+  padding: 10px;
+  border: 1px solid #716975;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #f0cfcf;
+}
+/* Shop Section */
+.shop-section {
+    backdrop-filter: blur(20px);
+  text-align: center;
+  padding: 60px 20px;
+  
+}
+
+.shop-section h1 {
+  font-size: 2.5rem;
+  color: black;
+  margin-bottom: 40px;
+}
+
+.product-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 280px;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+  height: 280px;
+  object-fit: cover;
+}
+
+.product-card h3 {
+  margin: 15px 0;
+  color: #9460a0;
+}
+
+.product-card button {
+  padding: 10px 20px;
+  background-color: #9856ac;
+  border: none;
+  border-radius: 25px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.product-card button:hover {
+  background-color: #d70fe1;
+}
+.shop-section a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    float: left;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+
+/* Register/Login Form Styling */
+.form-section {
+  padding: 80px 20px;
+  max-width: 400px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  backdrop-filter: blur(20px);
+  text-align: center;
+  color: black;
+}
+
+.form-section h1 {
+  margin-bottom: 30px;
+  font-size: 2em;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.auth-form input {
+  padding: 12px;
+  font-size: 1em;
+  border: none;
+  border-radius: 6px;
+}
+
+.auth-form button {
+  background-color: #ffffff;
+  color: #333;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.auth-form button:hover {
+  background-color: #c459bd;
+}
+
+.auth-form p {
+  font-size: 0.9em;
+  margin-top: 10px;
+  
+}
+
+.auth-form a {
+  color: #f0cfcf;
+  text-decoration: none;
+  color: rgb(20, 20, 21);
+}
+
+.auth-form a:hover {
+  text-decoration: underline;
+}
+
+/* Success & Error Messages */
+.message {
+  padding: 12px;
+  border-radius: 6px;
+  margin-top: 10px;
+  font-size: 0.95em;
+}
+
+.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}

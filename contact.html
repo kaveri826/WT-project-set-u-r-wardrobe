@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - #TREND_SETTER</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">#TREND_SETTER</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <section class="contact-section">
+    <h1>Get in Touch</h1>
+    <!-- Keep POST & action for later backend use -->
+    <form class="contact-form" action="backend.php" method="POST" id="contactForm">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+      // Stop the actual submission for now
+      e.preventDefault();
+
+      // Show alert
+      alert("Message Sent. Team will contact soon.");
+
+      // Redirect to index.html after OK
+      window.location.href = "index.html";
+
+      /* 
+         💡 When backend is ready:
+         - Remove e.preventDefault();
+         - The form will submit to backend.php
+         - Handle redirect in backend if needed
+      */
+    });
+  </script>
+</body>
+</html>

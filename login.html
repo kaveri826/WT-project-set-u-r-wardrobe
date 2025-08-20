@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - #TREND_SETTER</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">#TREND_SETTER</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+  <section class="form-section">
+  <form class="auth-form" action="#" method="POST" id="loginForm">
+    <h1>Welcome Back</h1>
+  <input type="email" name="email" placeholder="Email Address" required>
+  <input type="password" name="password" placeholder="Password" required>
+  <button type="submit">Login</button> <a href="forgot-password.html">forgot password? </a>
+  <p>Don't have an account? <a href="register.html">Register here</a></p>
+</form>
+</section>
+<script>
+  document.getElementById("loginForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    window.location.href = "index.html";
+  });
+</script>
+
+</body>
+</html>
